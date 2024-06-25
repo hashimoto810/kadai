@@ -1,0 +1,222 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*ここから*/
+body {
+    font-family: "ヒラギノ角ゴ Pro w3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS Pゴシック", "MS ゴシック", "MS PGothic", sans-serif;   
+}
+
+.container {/*全体*/
+    width: 100%;
+    max-width: 1100px;/*全体幅は図るしかない*/
+    margin:  0 auto;/*画面の真ん中に位置しているため*/
+    overflow: hidden;/*floatでなんだか浮き上がってしまうfooterを浮き上がらないようにす。要素の高さを指定する☆２カラムレイアウトに必要*/
+    font-size: 14px;/*文字の大きさは図りましょう*/
+    line-height: 2em;/*行間の高さ*/  
+}
+
+#main {/*右*/
+    width: 73%;/*MAX1100の時、幅が800ｐｘくらいなので、72という数字が出る。最後、検証で微調整する。*/
+    float: right;/*今回はfloatを使う、sidebarにも書く☆２カラムレイアウトに必要*/
+    padding-bottom: 95px;
+    background: #fff;
+}
+#main h2 {
+        height: 38px;/*行の高さを図りましょう*/
+        margin: 15px 0;
+        padding-left: 35px;/*どこから文字が始まるか,もじの予約*/
+        /*background-image: url(image/);
+        background-position: left;/*画像の位置を指定*/
+        /*background-repeat: no-repeat;/*画像を繰り返さない*/       
+        /*background-color: #000;*/
+        background: #000 url(image/) no-repeat left 10px center;/*left 5px center左から何pxという書き方、検証で検証しながら幅を調整*/
+        font-size:  16px; 
+        color: #fff;
+        line-height: 38px;/*行間の高さ*/
+}
+#main h3 {
+    height: 38px;/*行の高さを図りましょう*/
+    padding:  0 15px;/*どこから文字が始まるか*/
+    margin: 15px 0;
+    background: linear-gradient(#fff, #ebebeb);/*グラデ*/
+    border: 1px solid #ccc;/*色のツールで拾えない場合は、検証ツールを見る*/
+    font-size:  15px;  
+    color: #333;
+    line-height: 38px;/*行間の高さ*/
+}
+#main h4 {
+    padding:  0 15px;/*どこから文字が始まるか*/
+    font-weight: bold;
+    margin-top: 15px;/*デザインのための余白*/
+}
+#main p {
+    padding:  0 15px;/*どこから文字が始まるか*/
+}
+#main a {
+    color: #333;
+}
+.news {
+    height: 150px;/**/
+    padding-left: 15px;/*どこから文字が始まるか*/
+    overflow-y: scroll;/*縦方向に指定*/
+}
+.news dt {/*日付*/
+    display: inline-block;
+    width: 14%;/*検証で微調整する。*/
+    min-width: 100px;/*最低でも100px*/
+    border-bottom: 1px solid #ccc;/*下線部*/
+}
+.news dd {
+    display: inline-block;/*並ばせる*/
+    width: 86%;
+    border-bottom: 1px solid #ccc;/*下線部*/
+}
+.new {
+    background: #ED462F;
+    color: #fff;
+    padding: 0 4px;
+    border-radius: 2px;/*角丸*/
+    font-size: 10px;
+}
+#sidebar {/*左*/
+    width: 23%;/*MAXの時、幅が800ｐｘくらいなので、22という数字が出る。最後、検証で微調整する。*/
+    float: left;/*今回はfloatを使う、mainにも書く☆２カラムレイアウトに必要*/
+    background: #fff;
+}
+#sidebar ul {
+    list-style: none;/*箇条書きの点を消す*/
+}
+#sidebar ul li {
+    height: 32px;
+    background: #fff;
+    line-height: 32px; 
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;/*下線を消す*/
+}
+#sidebar ul li:last-child {/*最後のものに対して*/
+    border: none;
+}
+#sidebar ul li a {
+    display: block;/*これを指定することによってaタグを広げることができる。重要*/
+    padding-left: 12px;/*どこから文字が始まるか*/
+    color: #333;
+    text-decoration: none;/*下線を消す*/
+    transition: 0.5s;
+}
+#sidebar ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+#sidebar h2 {
+    padding-left: 10px;/*どこから文字が始まるか（ボーダーからどれだけの所から始まるか）*/
+    border-left: 3px solid #000;/*左の飾りボーダー*/
+    margin-bottom: 18px;/*見出しの下の余白*/
+    line-height: 1em;/*全体は2remだが、１remとする*/
+}
+.box {
+    margin: 15px;/*ボックスとボックスの間の*/
+}
+.bg-gray {/*グレーのボックス*/
+    padding: 20px 15px;
+    border: 1px solid #ccc;
+    background: #e4e4e4;/*図る*/
+}
+footer {/*floatでなんだか浮き上がってしまうのを、containerにoverflow記入☆２カラムレイアウトに必要*/
+    background: #000;
+    color: #ccc;
+    text-align: center;/*テキスト真ん中*/
+    font-size: 12px;/*図る*/
+    line-height: 2em;/*2文字分*/
+}
